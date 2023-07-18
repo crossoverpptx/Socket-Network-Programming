@@ -15,30 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\MyMsg.h">
+    <ClInclude Include="MyMsg.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\MyTCP.h">
+    <ClInclude Include="MyTCP.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\MyTools.h">
+    <ClInclude Include="MyTools.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\TalkServerService.h">
+    <ClInclude Include="TalkServerService.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\MyTCP.cpp">
+    <ClCompile Include="MyTCP.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\MyTools.cpp">
+    <ClCompile Include="MyTools.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Talk ServerService.cpp">
+    <ClCompile Include="TalkServer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\TalkServer.cpp">
+    <ClCompile Include="TalkServerService.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

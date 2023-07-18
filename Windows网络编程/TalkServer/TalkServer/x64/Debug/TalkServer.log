@@ -1,8 +1,1 @@
-﻿  MyTCP.cpp
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\TalkServer\MyTCP.cpp(23,13): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\TalkServer\MyTCP.cpp(56,8): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
-  MyTools.cpp
-  TalkServer.cpp
-  TalkServerService.cpp
-  正在生成代码...
-  TalkServer.vcxproj -> E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\x64\Debug\TalkServer.exe
+﻿  TalkServer.vcxproj -> E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\x64\Debug\TalkServer.exe

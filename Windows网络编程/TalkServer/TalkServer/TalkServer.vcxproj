@@ -18,6 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyMsg.h" />
+    <ClInclude Include="MyTCP.h" />
+    <ClInclude Include="MyTools.h" />
+    <ClInclude Include="TalkServerService.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyTCP.cpp" />
+    <ClCompile Include="MyTools.cpp" />
+    <ClCompile Include="TalkServer.cpp" />
+    <ClCompile Include="TalkServerService.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,18 +138,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\MyMsg.h" />
-    <ClInclude Include="..\..\MyTCP.h" />
-    <ClInclude Include="..\..\MyTools.h" />
-    <ClInclude Include="..\..\TalkServerService.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\MyTCP.cpp" />
-    <ClCompile Include="..\..\MyTools.cpp" />
-    <ClCompile Include="..\..\Talk ServerService.cpp" />
-    <ClCompile Include="..\..\TalkServer.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

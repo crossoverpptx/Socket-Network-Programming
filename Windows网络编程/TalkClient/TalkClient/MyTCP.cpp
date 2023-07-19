@@ -2,6 +2,7 @@
 *  文件名：MyTCP.cpp
 *  描述：  TCP/IP通信socket封装
 *************************************************************/
+
 #include <stdio.h>
 #include <WinSock2.h>
 #include "MyTools.h"
@@ -9,7 +10,7 @@
 
 #define PORT 5001
 int ls;   //侦听套接字
-int flag;//记录服务器或是客户端的标志
+int flag; //记录服务器或是客户端的标志
 
 /*   描述: 初始化服务器或客户端, 该函数在使用中必需首先调用,客户端和服务器 */
 int initSock(int IsServer)

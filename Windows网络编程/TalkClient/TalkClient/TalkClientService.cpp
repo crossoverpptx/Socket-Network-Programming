@@ -2,19 +2,18 @@
 *  文件名：TalkClientService.cpp
 *  描述：  客户端业务实现
 *************************************************************/
+
 #include "MyTCP.h"
 #include "MyTools.h"
 #include "TalkClientService.h"
-void myRecvThread();
-#define PORT 5001
 
+#define PORT 5001
 
 extern char serverip[6];
 
 char qq[6] = { 0 };
 char fqq[6] = { 0 };
 int sock;
-
 int status = STUS_START;
 
 void mainProc()
@@ -141,12 +140,8 @@ void statusLogined()
 		else
 		{
 			printMsg("输入内容错误（手抖了吧-_-)，请重新输入\n");
-
 		}
-
-
 	};
-
 }
 
 void connectServer()
@@ -206,7 +201,7 @@ void statusConnected()
 		int  i;
 		if (strlen(tmp) > 5)
 		{
-			printMsg("您输入的qq号长度大于5个，请重新输入\n");
+			printMsg("您输入的qq号长度大于5个，请重新输入！\n");
 			continue;
 		}
 

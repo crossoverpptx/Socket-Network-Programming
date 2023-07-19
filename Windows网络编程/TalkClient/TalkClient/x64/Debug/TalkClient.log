@@ -1,11 +1,1 @@
-﻿  MyTCP.cpp
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\MyTCP.cpp(22,13): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\MyTCP.cpp(56,29): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  MyTools.cpp
-  TalkClient.cpp
-  TalkClientService.cpp
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(192,15): warning C4473: “sprintf”: 没有为格式字符串传递足够的参数
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(192,15): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
-E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(192,15): message : 缺失的可变参数 1 为格式字符串“%d”所需
-  正在生成代码...
-  TalkClient.vcxproj -> E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\x64\Debug\TalkClient.exe
+﻿D:\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: 无法找到 v143 的生成工具(平台工具集 =“v143”)。若要使用 v143 生成工具进行生成，请安装 v143 生成工具。或者，可以升级到当前 Visual Studio 工具，方式是通过选择“项目”菜单或右键单击该解决方案，然后选择“重定解决方案目标”。

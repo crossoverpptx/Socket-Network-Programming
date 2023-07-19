@@ -2,6 +2,7 @@
 *  文件名：MyTools.cpp
 *  描述：  共用的文件，工具函数定义
 *************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "MyTools.h"
@@ -10,16 +11,16 @@ extern int flag;
 
 void printMsg(const char* msg) {
 	if (flag)
-		printf("\t【南工服务器豪华版】%s", msg);
+		printf("\t【南工智能聊天服务器】%s", msg);
 	else
-		printf("\t【南工客户端豪华版】%s", msg);
+		printf("\t【南工智能聊天客户端】%s", msg);
 }
 
 void printInt(int value) {
 	if (flag)
-		printf("\t【南工服务器豪华版】%d", value);
+		printf("\t【南工智能聊天服务器】%d", value);
 	else
-		printf("\t【南工客户端豪华版】%d", value);
+		printf("\t【南工智能聊天客户端】%d", value);
 }
 
 void printMsgExit(const char* msg) {

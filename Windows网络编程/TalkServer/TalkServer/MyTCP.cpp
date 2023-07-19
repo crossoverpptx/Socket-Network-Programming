@@ -2,17 +2,19 @@
 *  文件名：MyTCP.cpp
 *  描述：  TCP/IP通信socket封装
 *************************************************************/
+
 #include <stdio.h>
-#include <WinSock2.h>
+#include <WinSock2.h> // Windows 网络编程接口定义，如bind函数等。如Linux中的 #include <sys/socket.h>
+#include "MyTCP.h"
 #include "MyTools.h"
-#include <Ws2tcpip.h>
-#pragma comment (lib, "ws2_32.lib")
+#include <Ws2tcpip.h> // Windows 网络编程信息转换接口定义，如InetNtopW，此函数的 ANSI 版本inet_ntop。如Linux中的 #include <arpa/inet.h>
+#pragma comment (lib, "ws2_32.lib") // 链接Ws2_32.lib这个库，效果与在project->setting->link->Object/library Modules:在框里加入"***.lib"一样。
 
 #define PORT 5001
 int ls;   //侦听套接字
-int flag;//记录服务器或是客户端的标志
+int flag; //记录服务器或是客户端的标志
 
-/*   描述: 初始化服务器或客户端, 该函数在使用中必需首先调用,客户端和服务器 */
+/*   描述: 初始化服务器或客户端，该函数在使用中必需首先调用，客户端和服务器 */
 int initSock(int IsServer)
 {
 	WSADATA data;

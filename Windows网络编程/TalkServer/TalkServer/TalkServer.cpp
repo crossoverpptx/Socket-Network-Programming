@@ -6,39 +6,12 @@
 #include <stdio.h>
 #include "TalkServerService.h"
 
-void displayMenu();
+extern struct ClientInfo cinfo[10];  //客户端信息记录区
+
 void procMenu();
 void exitProc();
 void defProc();
-
-int main(int agrc, char* argv[])
-{
-	displayMenu();
-	procMenu();
-}
-
-extern struct ClientInfo cinfo[10];  //客户端信息记录区
-
-
-/*  系统菜单  */
-void displayMenu()
-{
-	printf("\t************************************************\n");
-	printf("\t*                                              *\n");
-	printf("\t*    南工141智能聊天服务器                      *\n");
-	printf("\t*            V1.0                              *\n");
-	printf("\t*                                              *\n");
-	printf("\t*                                              *\n");
-	printf("\t*                                              *\n");
-	printf("\t*      1) 启动 (s)                             *\n");
-	printf("\t*      2) 显示登录用户(u)                      *\n");
-	printf("\t*      3) 退出(e)                              *\n");
-	printf("\t*                                              *\n");
-	printf("\t***************************************\n");
-	printf("\n");
-	printf("\t您的选择是:");
-
-}
+void displayMenu();
 
 void procMenu()
 {
@@ -85,12 +58,13 @@ void exitProc()
 
 void defProc()
 {
-	printf("\t 输入字符错误！\n");
+	printf("\t输入字符错误！\n");
 }
+
 void showallmessage()
 {
 	int i = 0;
-	printf("\t【南工服务器豪华版】已登入服务器的QQ为:\n");
+	printf("\t【南工智能聊天服务器】已登入服务器的QQ为:\n");
 	for (i = 0; i < sizeof(cinfo) / sizeof(struct ClientInfo); i++)
 	{
 		if (cinfo[i].isFree == 0)
@@ -100,4 +74,30 @@ void showallmessage()
 			printf("\t  %s\n", cinfo[i].qq);
 		}
 	}
+}
+
+/*  系统菜单  */
+void displayMenu()
+{
+	printf("\t************************************************\n");
+	printf("\t*                                              *\n");
+	printf("\t*    南工智能聊天服务器                        *\n");
+	printf("\t*            V1.0                              *\n");
+	printf("\t*                                              *\n");
+	printf("\t*                                              *\n");
+	printf("\t*                                              *\n");
+	printf("\t*      1) 启动 (s)                             *\n");
+	printf("\t*      2) 显示登录用户(u)                      *\n");
+	printf("\t*      3) 退出(e)                              *\n");
+	printf("\t*                                              *\n");
+	printf("\t************************************************\n");
+	printf("\n");
+	printf("\t您的选择是:");
+
+}
+
+int main(int agrc, char* argv[])
+{
+	displayMenu();
+	procMenu();
 }

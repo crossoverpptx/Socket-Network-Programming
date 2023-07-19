@@ -2,13 +2,14 @@
 *  文件名：TalkServerService.cpp
 *  描述：  服务器业务实现
 *************************************************************/
+
 #include "MyTCP.h"
 #include "MyTools.h"
 #include "TalkServerService.h"
 
 struct ClientInfo cinfo[10];  //客户端信息记录区
 
-/**   启动服务器 */
+/**   启动服务器 **/
 void startServer()
 {
 	DWORD threadId;
@@ -85,7 +86,6 @@ void myRecvThread(ClientInfo* pcinfo)
 	printMsg(buf);
 }
 
-
 void procLoginMsg(struct ClientInfo* pcinfo, struct LoginMsg* msg)
 {
 	strcpy_s(pcinfo->qq, msg->qq);  //保存qq到服务器缓冲区
@@ -98,6 +98,7 @@ void procLoginMsg(struct ClientInfo* pcinfo, struct LoginMsg* msg)
 	tcpSend(pcinfo->sock, (const char*)&res, sizeof(res));
 }
 
+//处理好友QQ是否在线
 void procFriendQqMsg(struct ClientInfo* pcinfo, struct FriendQqMsg* msg)
 {
 	int i;
@@ -119,6 +120,7 @@ void procFriendQqMsg(struct ClientInfo* pcinfo, struct FriendQqMsg* msg)
 	tcpSend(pcinfo->sock, (const char*)&res, sizeof(res));
 }
 
+//将聊天消息转发给好友
 void procTalkMsg(struct TalkMsg* pmsg)
 {
 	int i;
@@ -154,6 +156,7 @@ int findIdelCinfo()
 	return -1;
 }
 
+// 处理所有好友列表
 void procFriendQqMsgAll(struct ClientInfo* pcinfo, struct RequestAllFriend* msg)
 {
 	struct AllFriendMsg res;

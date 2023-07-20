@@ -82,7 +82,7 @@ void displayMenu()
 	printf("\t************************************************\n");
 	printf("\t*                                              *\n");
 	printf("\t*    南工智能聊天服务器                        *\n");
-	printf("\t*            V1.0                              *\n");
+	printf("\t*              V1.0                            *\n");
 	printf("\t*                                              *\n");
 	printf("\t*                                              *\n");
 	printf("\t*                                              *\n");

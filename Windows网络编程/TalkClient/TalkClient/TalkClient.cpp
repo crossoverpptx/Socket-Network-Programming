@@ -45,14 +45,15 @@ void displayMenu()
 	printf("\n");
 	printf("\t************************************************\n");
 	printf("\t*                                              *\n");
-	printf("\t*         南工智能聊天客户端               *\n");
-	printf("\t*					Version 1.0               *\n");
+	printf("\t*         南工智能聊天客户端                   *\n");
+	printf("\t*                   V1.0                       *\n");
 	printf("\t*                                              *\n");
 	printf("\t*                                              *\n");
 	printf("\t*                                              *\n");
 	printf("\t*           1) 登录(L)                         *\n");
 	printf("\t*           2) 退出(e)                         *\n");
-	printf("\t*                      by---PPTX          *\n");
+	printf("\t*                      by--pptx                *\n");
+	printf("\t*                                              *\n");
 	printf("\t************************************************\n");
 	printf("\n");
 	connectServer();

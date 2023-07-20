@@ -1,2 +1,9 @@
-﻿  TalkServer.cpp
+﻿  MyTCP.cpp
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\TalkServer\MyTCP.cpp(25,13): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\TalkServer\MyTCP.cpp(58,8): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\TalkServer\MyTCP.cpp(67,47): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  MyTools.cpp
+  TalkServer.cpp
+  TalkServerService.cpp
+  正在生成代码...
   TalkServer.vcxproj -> E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkServer\x64\Debug\TalkServer.exe

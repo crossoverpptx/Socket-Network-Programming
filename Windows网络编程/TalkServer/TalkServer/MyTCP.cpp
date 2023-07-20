@@ -7,7 +7,7 @@
 #include <WinSock2.h> // Windows 网络编程接口定义，如bind函数等。如Linux中的 #include <sys/socket.h>
 #include "MyTCP.h"
 #include "MyTools.h"
-#include <Ws2tcpip.h> // Windows 网络编程信息转换接口定义，如InetNtopW，此函数的 ANSI 版本inet_ntop。如Linux中的 #include <arpa/inet.h>
+#include <Ws2tcpip.h> // Windows 网络编程信息转换接口定义，如InetNtop，此函数的 ANSI 版本inet_ntop。如Linux中的 #include <arpa/inet.h>
 #pragma comment (lib, "ws2_32.lib") // 链接Ws2_32.lib这个库，效果与在project->setting->link->Object/library Modules:在框里加入"***.lib"一样。
 
 #define PORT 5001
@@ -63,7 +63,8 @@ int tcpAccept()
 
 	char tmp[40] = { 0 };
 
-	sprintf_s(tmp, "客户端进入,IP为:%s\n", inet_ntop(AF_INET, &cliAddr.sin_addr, tmp, sizeof(tmp)));
+	//sprintf_s(tmp, "客户端进入,IP为:%s\n", InetNtop(AF_INET, &cliAddr.sin_addr, tmp, 40));
+	sprintf_s(tmp, "客户端进入,IP为:%s\n", inet_ntoa(cliAddr.sin_addr));
 	printMsg(tmp);
 	printInt(s);
 

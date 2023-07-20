@@ -1,1 +1,27 @@
-﻿D:\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: 无法找到 v143 的生成工具(平台工具集 =“v143”)。若要使用 v143 生成工具进行生成，请安装 v143 生成工具。或者，可以升级到当前 Visual Studio 工具，方式是通过选择“项目”菜单或右键单击该解决方案，然后选择“重定解决方案目标”。
+﻿  MyTCP.cpp
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\MyTCP.cpp(23,13): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\MyTCP.cpp(57,29): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  MyTools.cpp
+  TalkClient.cpp
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClient.cpp(103,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  TalkClientService.cpp
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(58,2): warning C4996: 'setbuf': This function or variable may be unsafe. Consider using setvbuf instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(73,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(74,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(75,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(91,3): warning C4996: 'setbuf': This function or variable may be unsafe. Consider using setvbuf instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(100,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(115,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(116,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(187,15): warning C4473: “sprintf”: 没有为格式字符串传递足够的参数
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(187,15): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(187,15): message : 缺失的可变参数 1 为格式字符串“%d”所需
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(187,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(200,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(220,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(235,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(277,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(283,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\TalkClient\TalkClientService.cpp(292,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  正在生成代码...
+  TalkClient.vcxproj -> E:\GitHub\Socket-Network-Programming\Windows网络编程\TalkClient\x64\Debug\TalkClient.exe
